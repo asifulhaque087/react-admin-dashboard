@@ -1,11 +1,23 @@
-import css from "./Layout.module.css"
+import css from "./Layout.module.css";
 
 const Layout = () => {
   return (
-    <div className={css.container}> 
-      this is layout page Layout
-    </div>
-  )
-}
+    <div className={css.container}>
+      {/* left is sidebar */}
+      <div>sidebar</div>
 
-export default Layout
+      {/* right is gradient */}
+      <div className={css.dashboard}>
+        <div className={css.topBaseGradients}>
+          {/* we have 3 gradient*/}
+          <div className="gradient-red"></div>
+          <div className="gradient-orange"></div>
+          <div className="gradient-blue"></div>
+
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Layout;
